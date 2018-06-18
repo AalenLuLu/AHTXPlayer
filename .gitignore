@@ -1,0 +1,10 @@
+.DS_Store
+
+xcuserdata
+*.xcworkspace
+
+AHTXLivePlayerDemoTests
+AHTXLivePlayerDemoUITests
+
+Pods
+Podfile.lock

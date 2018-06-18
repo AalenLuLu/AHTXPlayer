@@ -1,0 +1,903 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4ADD27B15C4E3BF832216CA2 /* libPods-AHTXLivePlayerDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A82DC07701B704AA12A9B73D /* libPods-AHTXLivePlayerDemoTests.a */; };
+		6358C65DA4241DA8EF6EC940 /* libPods-AHTXLivePlayerDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21232C58B59D7D7ABC2EC2FB /* libPods-AHTXLivePlayerDemoUITests.a */; };
+		EDB5AFB42900D7043639806D /* libPods-AHTXLivePlayerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C5EB8F69EC1CC01F3AABC2 /* libPods-AHTXLivePlayerDemo.a */; };
+		FE2B0C6720B1408500B823C8 /* AHTXLivePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B0C6620B1408500B823C8 /* AHTXLivePlayer.m */; };
+		FE2B0C7120B1C9B400B823C8 /* AHTXVodPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B0C7020B1C9B400B823C8 /* AHTXVodPlayer.m */; };
+		FE2B0C7720B1D4A000B823C8 /* AHTXPlayerDef.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B0C7620B1D4A000B823C8 /* AHTXPlayerDef.m */; };
+		FE2B0C7A20B1DA8C00B823C8 /* AHTXPlayerAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B0C7920B1DA8C00B823C8 /* AHTXPlayerAgent.m */; };
+		FE62773120B470C900E633B2 /* AHTXPlayItemFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62772920B470C900E633B2 /* AHTXPlayItemFactory.m */; };
+		FE62773220B470C900E633B2 /* AHTXLivePlayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62772C20B470C900E633B2 /* AHTXLivePlayItem.m */; };
+		FE62773320B470C900E633B2 /* AHTXPlayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62772E20B470C900E633B2 /* AHTXPlayItem.m */; };
+		FE62773420B470C900E633B2 /* AHTXVodPlayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62773020B470C900E633B2 /* AHTXVodPlayItem.m */; };
+		FE62773720B470E500E633B2 /* AHTXLivePlayItemFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62773620B470E500E633B2 /* AHTXLivePlayItemFactory.m */; };
+		FE62773A20B4716900E633B2 /* AHTXVodPlayItemFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62773920B4716900E633B2 /* AHTXVodPlayItemFactory.m */; };
+		FE6F0BA020B94D0D0061F1D4 /* AHTXPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6F0B9F20B94D0D0061F1D4 /* AHTXPlayer.m */; };
+		FEBBE28520B13A480024B8D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBBE28420B13A480024B8D3 /* AppDelegate.m */; };
+		FEBBE28820B13A480024B8D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBBE28720B13A480024B8D3 /* ViewController.m */; };
+		FEBBE28B20B13A480024B8D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEBBE28920B13A480024B8D3 /* Main.storyboard */; };
+		FEBBE28D20B13A490024B8D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEBBE28C20B13A490024B8D3 /* Assets.xcassets */; };
+		FEBBE29020B13A490024B8D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEBBE28E20B13A490024B8D3 /* LaunchScreen.storyboard */; };
+		FEBBE29320B13A490024B8D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBBE29220B13A490024B8D3 /* main.m */; };
+		FEBBE29D20B13A490024B8D3 /* AHTXLivePlayerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBBE29C20B13A490024B8D3 /* AHTXLivePlayerDemoTests.m */; };
+		FEBBE2A820B13A490024B8D3 /* AHTXLivePlayerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBBE2A720B13A490024B8D3 /* AHTXLivePlayerDemoUITests.m */; };
+		FEBC6E9520CC0F1D00111AC7 /* AHTXPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBC6E9420CC0F1D00111AC7 /* AHTXPlayerView.m */; };
+		FEBC6E9820CC3DA500111AC7 /* AHTXPlayerTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBC6E9720CC3DA500111AC7 /* AHTXPlayerTopView.m */; };
+		FEBC6E9C20CC3E9800111AC7 /* AHTXPlayerBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBC6E9B20CC3E9800111AC7 /* AHTXPlayerBottomView.m */; };
+		FEBC6E9F20CC3F0C00111AC7 /* AHTXPlayerCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBC6E9E20CC3F0C00111AC7 /* AHTXPlayerCoverView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEBBE29920B13A490024B8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEBBE27820B13A480024B8D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEBBE27F20B13A480024B8D3;
+			remoteInfo = AHTXLivePlayerDemo;
+		};
+		FEBBE2A420B13A490024B8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEBBE27820B13A480024B8D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEBBE27F20B13A480024B8D3;
+			remoteInfo = AHTXLivePlayerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04C5EB8F69EC1CC01F3AABC2 /* libPods-AHTXLivePlayerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AHTXLivePlayerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1359710B4E9D2999B1A42512 /* Pods-AHTXLivePlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHTXLivePlayerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHTXLivePlayerDemo/Pods-AHTXLivePlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		21232C58B59D7D7ABC2EC2FB /* libPods-AHTXLivePlayerDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AHTXLivePlayerDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A18D90C3670D7C36D5EE484 /* Pods-AHTXLivePlayerDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHTXLivePlayerDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHTXLivePlayerDemoUITests/Pods-AHTXLivePlayerDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6042898EFB5F6F48D0A0B3DD /* Pods-AHTXLivePlayerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHTXLivePlayerDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AHTXLivePlayerDemoTests/Pods-AHTXLivePlayerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		836193C62513A37D96AE61AD /* Pods-AHTXLivePlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHTXLivePlayerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AHTXLivePlayerDemo/Pods-AHTXLivePlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		87CCEA5C941DAABF41EC6849 /* Pods-AHTXLivePlayerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHTXLivePlayerDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHTXLivePlayerDemoTests/Pods-AHTXLivePlayerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		9FB827EFD14964AE8435E2E2 /* Pods-AHTXLivePlayerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHTXLivePlayerDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AHTXLivePlayerDemoUITests/Pods-AHTXLivePlayerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A82DC07701B704AA12A9B73D /* libPods-AHTXLivePlayerDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AHTXLivePlayerDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE2B0C6520B1408500B823C8 /* AHTXLivePlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHTXLivePlayer.h; sourceTree = "<group>"; };
+		FE2B0C6620B1408500B823C8 /* AHTXLivePlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHTXLivePlayer.m; sourceTree = "<group>"; };
+		FE2B0C6F20B1C9B400B823C8 /* AHTXVodPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHTXVodPlayer.h; sourceTree = "<group>"; };
+		FE2B0C7020B1C9B400B823C8 /* AHTXVodPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHTXVodPlayer.m; sourceTree = "<group>"; };
+		FE2B0C7520B1D4A000B823C8 /* AHTXPlayerDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHTXPlayerDef.h; sourceTree = "<group>"; };
+		FE2B0C7620B1D4A000B823C8 /* AHTXPlayerDef.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHTXPlayerDef.m; sourceTree = "<group>"; };
+		FE2B0C7820B1DA8C00B823C8 /* AHTXPlayerAgent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHTXPlayerAgent.h; sourceTree = "<group>"; };
+		FE2B0C7920B1DA8C00B823C8 /* AHTXPlayerAgent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHTXPlayerAgent.m; sourceTree = "<group>"; };
+		FE62772820B470C900E633B2 /* AHTXPlayItemFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHTXPlayItemFactory.h; sourceTree = "<group>"; };
+		FE62772920B470C900E633B2 /* AHTXPlayItemFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHTXPlayItemFactory.m; sourceTree = "<group>"; };
+		FE62772B20B470C900E633B2 /* AHTXLivePlayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHTXLivePlayItem.h; sourceTree = "<group>"; };
+		FE62772C20B470C900E633B2 /* AHTXLivePlayItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHTXLivePlayItem.m; sourceTree = "<group>"; };
+		FE62772D20B470C900E633B2 /* AHTXPlayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHTXPlayItem.h; sourceTree = "<group>"; };
+		FE62772E20B470C900E633B2 /* AHTXPlayItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHTXPlayItem.m; sourceTree = "<group>"; };
+		FE62772F20B470C900E633B2 /* AHTXVodPlayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHTXVodPlayItem.h; sourceTree = "<group>"; };
+		FE62773020B470C900E633B2 /* AHTXVodPlayItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHTXVodPlayItem.m; sourceTree = "<group>"; };
+		FE62773520B470E500E633B2 /* AHTXLivePlayItemFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHTXLivePlayItemFactory.h; sourceTree = "<group>"; };
+		FE62773620B470E500E633B2 /* AHTXLivePlayItemFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHTXLivePlayItemFactory.m; sourceTree = "<group>"; };
+		FE62773820B4716900E633B2 /* AHTXVodPlayItemFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHTXVodPlayItemFactory.h; sourceTree = "<group>"; };
+		FE62773920B4716900E633B2 /* AHTXVodPlayItemFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHTXVodPlayItemFactory.m; sourceTree = "<group>"; };
+		FE6F0B9E20B94D0D0061F1D4 /* AHTXPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHTXPlayer.h; sourceTree = "<group>"; };
+		FE6F0B9F20B94D0D0061F1D4 /* AHTXPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHTXPlayer.m; sourceTree = "<group>"; };
+		FEBBE28020B13A480024B8D3 /* AHTXLivePlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AHTXLivePlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEBBE28320B13A480024B8D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FEBBE28420B13A480024B8D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FEBBE28620B13A480024B8D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FEBBE28720B13A480024B8D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FEBBE28A20B13A480024B8D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FEBBE28C20B13A490024B8D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEBBE28F20B13A490024B8D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEBBE29120B13A490024B8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEBBE29220B13A490024B8D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEBBE29820B13A490024B8D3 /* AHTXLivePlayerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AHTXLivePlayerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEBBE29C20B13A490024B8D3 /* AHTXLivePlayerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHTXLivePlayerDemoTests.m; sourceTree = "<group>"; };
+		FEBBE29E20B13A490024B8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEBBE2A320B13A490024B8D3 /* AHTXLivePlayerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AHTXLivePlayerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEBBE2A720B13A490024B8D3 /* AHTXLivePlayerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHTXLivePlayerDemoUITests.m; sourceTree = "<group>"; };
+		FEBBE2A920B13A490024B8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEBC6E9320CC0F1D00111AC7 /* AHTXPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHTXPlayerView.h; sourceTree = "<group>"; };
+		FEBC6E9420CC0F1D00111AC7 /* AHTXPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHTXPlayerView.m; sourceTree = "<group>"; };
+		FEBC6E9620CC3DA500111AC7 /* AHTXPlayerTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHTXPlayerTopView.h; sourceTree = "<group>"; };
+		FEBC6E9720CC3DA500111AC7 /* AHTXPlayerTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHTXPlayerTopView.m; sourceTree = "<group>"; };
+		FEBC6E9920CC3E0900111AC7 /* AHTXPlayerViewDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHTXPlayerViewDef.h; sourceTree = "<group>"; };
+		FEBC6E9A20CC3E9800111AC7 /* AHTXPlayerBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHTXPlayerBottomView.h; sourceTree = "<group>"; };
+		FEBC6E9B20CC3E9800111AC7 /* AHTXPlayerBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHTXPlayerBottomView.m; sourceTree = "<group>"; };
+		FEBC6E9D20CC3F0C00111AC7 /* AHTXPlayerCoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHTXPlayerCoverView.h; sourceTree = "<group>"; };
+		FEBC6E9E20CC3F0C00111AC7 /* AHTXPlayerCoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHTXPlayerCoverView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEBBE27D20B13A480024B8D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB5AFB42900D7043639806D /* libPods-AHTXLivePlayerDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEBBE29520B13A490024B8D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4ADD27B15C4E3BF832216CA2 /* libPods-AHTXLivePlayerDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEBBE2A020B13A490024B8D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6358C65DA4241DA8EF6EC940 /* libPods-AHTXLivePlayerDemoUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03B413C1D92089826ECD4646 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				836193C62513A37D96AE61AD /* Pods-AHTXLivePlayerDemo.debug.xcconfig */,
+				1359710B4E9D2999B1A42512 /* Pods-AHTXLivePlayerDemo.release.xcconfig */,
+				6042898EFB5F6F48D0A0B3DD /* Pods-AHTXLivePlayerDemoTests.debug.xcconfig */,
+				87CCEA5C941DAABF41EC6849 /* Pods-AHTXLivePlayerDemoTests.release.xcconfig */,
+				9FB827EFD14964AE8435E2E2 /* Pods-AHTXLivePlayerDemoUITests.debug.xcconfig */,
+				3A18D90C3670D7C36D5EE484 /* Pods-AHTXLivePlayerDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		36F2FBC34082194442659513 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04C5EB8F69EC1CC01F3AABC2 /* libPods-AHTXLivePlayerDemo.a */,
+				A82DC07701B704AA12A9B73D /* libPods-AHTXLivePlayerDemoTests.a */,
+				21232C58B59D7D7ABC2EC2FB /* libPods-AHTXLivePlayerDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE62772720B470C900E633B2 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				FE62772820B470C900E633B2 /* AHTXPlayItemFactory.h */,
+				FE62772920B470C900E633B2 /* AHTXPlayItemFactory.m */,
+				FE62773520B470E500E633B2 /* AHTXLivePlayItemFactory.h */,
+				FE62773620B470E500E633B2 /* AHTXLivePlayItemFactory.m */,
+				FE62773820B4716900E633B2 /* AHTXVodPlayItemFactory.h */,
+				FE62773920B4716900E633B2 /* AHTXVodPlayItemFactory.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		FE62772A20B470C900E633B2 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				FE62772D20B470C900E633B2 /* AHTXPlayItem.h */,
+				FE62772E20B470C900E633B2 /* AHTXPlayItem.m */,
+				FE62772B20B470C900E633B2 /* AHTXLivePlayItem.h */,
+				FE62772C20B470C900E633B2 /* AHTXLivePlayItem.m */,
+				FE62772F20B470C900E633B2 /* AHTXVodPlayItem.h */,
+				FE62773020B470C900E633B2 /* AHTXVodPlayItem.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FEBBE27720B13A480024B8D3 = {
+			isa = PBXGroup;
+			children = (
+				FEBBE2B520B13A610024B8D3 /* AHTXLivePlayer */,
+				FEBBE28220B13A480024B8D3 /* AHTXLivePlayerDemo */,
+				FEBBE29B20B13A490024B8D3 /* AHTXLivePlayerDemoTests */,
+				FEBBE2A620B13A490024B8D3 /* AHTXLivePlayerDemoUITests */,
+				FEBBE28120B13A480024B8D3 /* Products */,
+				03B413C1D92089826ECD4646 /* Pods */,
+				36F2FBC34082194442659513 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FEBBE28120B13A480024B8D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEBBE28020B13A480024B8D3 /* AHTXLivePlayerDemo.app */,
+				FEBBE29820B13A490024B8D3 /* AHTXLivePlayerDemoTests.xctest */,
+				FEBBE2A320B13A490024B8D3 /* AHTXLivePlayerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEBBE28220B13A480024B8D3 /* AHTXLivePlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FEBBE28320B13A480024B8D3 /* AppDelegate.h */,
+				FEBBE28420B13A480024B8D3 /* AppDelegate.m */,
+				FEBBE28620B13A480024B8D3 /* ViewController.h */,
+				FEBBE28720B13A480024B8D3 /* ViewController.m */,
+				FEBBE28920B13A480024B8D3 /* Main.storyboard */,
+				FEBBE28C20B13A490024B8D3 /* Assets.xcassets */,
+				FEBBE28E20B13A490024B8D3 /* LaunchScreen.storyboard */,
+				FEBBE29120B13A490024B8D3 /* Info.plist */,
+				FEBBE29220B13A490024B8D3 /* main.m */,
+			);
+			path = AHTXLivePlayerDemo;
+			sourceTree = "<group>";
+		};
+		FEBBE29B20B13A490024B8D3 /* AHTXLivePlayerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEBBE29C20B13A490024B8D3 /* AHTXLivePlayerDemoTests.m */,
+				FEBBE29E20B13A490024B8D3 /* Info.plist */,
+			);
+			path = AHTXLivePlayerDemoTests;
+			sourceTree = "<group>";
+		};
+		FEBBE2A620B13A490024B8D3 /* AHTXLivePlayerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FEBBE2A720B13A490024B8D3 /* AHTXLivePlayerDemoUITests.m */,
+				FEBBE2A920B13A490024B8D3 /* Info.plist */,
+			);
+			path = AHTXLivePlayerDemoUITests;
+			sourceTree = "<group>";
+		};
+		FEBBE2B520B13A610024B8D3 /* AHTXLivePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				FEBC6E9220CC0F0200111AC7 /* View */,
+				FE62772A20B470C900E633B2 /* Entity */,
+				FE62772720B470C900E633B2 /* Factory */,
+				FE2B0C7520B1D4A000B823C8 /* AHTXPlayerDef.h */,
+				FE2B0C7620B1D4A000B823C8 /* AHTXPlayerDef.m */,
+				FE2B0C7820B1DA8C00B823C8 /* AHTXPlayerAgent.h */,
+				FE2B0C7920B1DA8C00B823C8 /* AHTXPlayerAgent.m */,
+				FE6F0B9E20B94D0D0061F1D4 /* AHTXPlayer.h */,
+				FE6F0B9F20B94D0D0061F1D4 /* AHTXPlayer.m */,
+				FE2B0C6520B1408500B823C8 /* AHTXLivePlayer.h */,
+				FE2B0C6620B1408500B823C8 /* AHTXLivePlayer.m */,
+				FE2B0C6F20B1C9B400B823C8 /* AHTXVodPlayer.h */,
+				FE2B0C7020B1C9B400B823C8 /* AHTXVodPlayer.m */,
+			);
+			name = AHTXLivePlayer;
+			path = ../AHTXLivePlayer;
+			sourceTree = "<group>";
+		};
+		FEBC6E9220CC0F0200111AC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEBC6E9920CC3E0900111AC7 /* AHTXPlayerViewDef.h */,
+				FEBC6E9320CC0F1D00111AC7 /* AHTXPlayerView.h */,
+				FEBC6E9420CC0F1D00111AC7 /* AHTXPlayerView.m */,
+				FEBC6E9D20CC3F0C00111AC7 /* AHTXPlayerCoverView.h */,
+				FEBC6E9E20CC3F0C00111AC7 /* AHTXPlayerCoverView.m */,
+				FEBC6E9620CC3DA500111AC7 /* AHTXPlayerTopView.h */,
+				FEBC6E9720CC3DA500111AC7 /* AHTXPlayerTopView.m */,
+				FEBC6E9A20CC3E9800111AC7 /* AHTXPlayerBottomView.h */,
+				FEBC6E9B20CC3E9800111AC7 /* AHTXPlayerBottomView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEBBE27F20B13A480024B8D3 /* AHTXLivePlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEBBE2AC20B13A490024B8D3 /* Build configuration list for PBXNativeTarget "AHTXLivePlayerDemo" */;
+			buildPhases = (
+				1C29C53F33DF88E81147449E /* [CP] Check Pods Manifest.lock */,
+				FEBBE27C20B13A480024B8D3 /* Sources */,
+				FEBBE27D20B13A480024B8D3 /* Frameworks */,
+				FEBBE27E20B13A480024B8D3 /* Resources */,
+				F32BCE417163283DBB41BD08 /* [CP] Embed Pods Frameworks */,
+				67388AFD34B6E1BE2EF01EFE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AHTXLivePlayerDemo;
+			productName = AHTXLivePlayerDemo;
+			productReference = FEBBE28020B13A480024B8D3 /* AHTXLivePlayerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEBBE29720B13A490024B8D3 /* AHTXLivePlayerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEBBE2AF20B13A490024B8D3 /* Build configuration list for PBXNativeTarget "AHTXLivePlayerDemoTests" */;
+			buildPhases = (
+				E1E9DC1A36857D72EC876667 /* [CP] Check Pods Manifest.lock */,
+				FEBBE29420B13A490024B8D3 /* Sources */,
+				FEBBE29520B13A490024B8D3 /* Frameworks */,
+				FEBBE29620B13A490024B8D3 /* Resources */,
+				3E85CBB0784F8BDDCEE3EB9F /* [CP] Embed Pods Frameworks */,
+				5751214F144ED74358637EA2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEBBE29A20B13A490024B8D3 /* PBXTargetDependency */,
+			);
+			name = AHTXLivePlayerDemoTests;
+			productName = AHTXLivePlayerDemoTests;
+			productReference = FEBBE29820B13A490024B8D3 /* AHTXLivePlayerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FEBBE2A220B13A490024B8D3 /* AHTXLivePlayerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEBBE2B220B13A490024B8D3 /* Build configuration list for PBXNativeTarget "AHTXLivePlayerDemoUITests" */;
+			buildPhases = (
+				7F0E8F3EB90BD8032A590666 /* [CP] Check Pods Manifest.lock */,
+				FEBBE29F20B13A490024B8D3 /* Sources */,
+				FEBBE2A020B13A490024B8D3 /* Frameworks */,
+				FEBBE2A120B13A490024B8D3 /* Resources */,
+				57583D63276B0591C1479A72 /* [CP] Embed Pods Frameworks */,
+				90C38F6FF6D41EEDA6DB6065 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEBBE2A520B13A490024B8D3 /* PBXTargetDependency */,
+			);
+			name = AHTXLivePlayerDemoUITests;
+			productName = AHTXLivePlayerDemoUITests;
+			productReference = FEBBE2A320B13A490024B8D3 /* AHTXLivePlayerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEBBE27820B13A480024B8D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Aalen;
+				TargetAttributes = {
+					FEBBE27F20B13A480024B8D3 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					FEBBE29720B13A490024B8D3 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = FEBBE27F20B13A480024B8D3;
+					};
+					FEBBE2A220B13A490024B8D3 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = FEBBE27F20B13A480024B8D3;
+					};
+				};
+			};
+			buildConfigurationList = FEBBE27B20B13A480024B8D3 /* Build configuration list for PBXProject "AHTXLivePlayerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEBBE27720B13A480024B8D3;
+			productRefGroup = FEBBE28120B13A480024B8D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEBBE27F20B13A480024B8D3 /* AHTXLivePlayerDemo */,
+				FEBBE29720B13A490024B8D3 /* AHTXLivePlayerDemoTests */,
+				FEBBE2A220B13A490024B8D3 /* AHTXLivePlayerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEBBE27E20B13A480024B8D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBBE29020B13A490024B8D3 /* LaunchScreen.storyboard in Resources */,
+				FEBBE28D20B13A490024B8D3 /* Assets.xcassets in Resources */,
+				FEBBE28B20B13A480024B8D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEBBE29620B13A490024B8D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEBBE2A120B13A490024B8D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C29C53F33DF88E81147449E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AHTXLivePlayerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E85CBB0784F8BDDCEE3EB9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHTXLivePlayerDemoTests/Pods-AHTXLivePlayerDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5751214F144ED74358637EA2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHTXLivePlayerDemoTests/Pods-AHTXLivePlayerDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57583D63276B0591C1479A72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHTXLivePlayerDemoUITests/Pods-AHTXLivePlayerDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67388AFD34B6E1BE2EF01EFE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHTXLivePlayerDemo/Pods-AHTXLivePlayerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F0E8F3EB90BD8032A590666 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AHTXLivePlayerDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90C38F6FF6D41EEDA6DB6065 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHTXLivePlayerDemoUITests/Pods-AHTXLivePlayerDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1E9DC1A36857D72EC876667 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AHTXLivePlayerDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F32BCE417163283DBB41BD08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHTXLivePlayerDemo/Pods-AHTXLivePlayerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEBBE27C20B13A480024B8D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBBE28820B13A480024B8D3 /* ViewController.m in Sources */,
+				FE62773320B470C900E633B2 /* AHTXPlayItem.m in Sources */,
+				FE62773420B470C900E633B2 /* AHTXVodPlayItem.m in Sources */,
+				FE2B0C7120B1C9B400B823C8 /* AHTXVodPlayer.m in Sources */,
+				FEBC6E9F20CC3F0C00111AC7 /* AHTXPlayerCoverView.m in Sources */,
+				FE62773220B470C900E633B2 /* AHTXLivePlayItem.m in Sources */,
+				FE62773120B470C900E633B2 /* AHTXPlayItemFactory.m in Sources */,
+				FE62773720B470E500E633B2 /* AHTXLivePlayItemFactory.m in Sources */,
+				FE6F0BA020B94D0D0061F1D4 /* AHTXPlayer.m in Sources */,
+				FEBC6E9520CC0F1D00111AC7 /* AHTXPlayerView.m in Sources */,
+				FE2B0C7A20B1DA8C00B823C8 /* AHTXPlayerAgent.m in Sources */,
+				FE2B0C7720B1D4A000B823C8 /* AHTXPlayerDef.m in Sources */,
+				FEBC6E9C20CC3E9800111AC7 /* AHTXPlayerBottomView.m in Sources */,
+				FE62773A20B4716900E633B2 /* AHTXVodPlayItemFactory.m in Sources */,
+				FE2B0C6720B1408500B823C8 /* AHTXLivePlayer.m in Sources */,
+				FEBBE29320B13A490024B8D3 /* main.m in Sources */,
+				FEBC6E9820CC3DA500111AC7 /* AHTXPlayerTopView.m in Sources */,
+				FEBBE28520B13A480024B8D3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEBBE29420B13A490024B8D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBBE29D20B13A490024B8D3 /* AHTXLivePlayerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEBBE29F20B13A490024B8D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBBE2A820B13A490024B8D3 /* AHTXLivePlayerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEBBE29A20B13A490024B8D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEBBE27F20B13A480024B8D3 /* AHTXLivePlayerDemo */;
+			targetProxy = FEBBE29920B13A490024B8D3 /* PBXContainerItemProxy */;
+		};
+		FEBBE2A520B13A490024B8D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEBBE27F20B13A480024B8D3 /* AHTXLivePlayerDemo */;
+			targetProxy = FEBBE2A420B13A490024B8D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FEBBE28920B13A480024B8D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEBBE28A20B13A480024B8D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FEBBE28E20B13A490024B8D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEBBE28F20B13A490024B8D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEBBE2AA20B13A490024B8D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FEBBE2AB20B13A490024B8D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEBBE2AD20B13A490024B8D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836193C62513A37D96AE61AD /* Pods-AHTXLivePlayerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AHTXLivePlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aalen.AHTXLivePlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEBBE2AE20B13A490024B8D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1359710B4E9D2999B1A42512 /* Pods-AHTXLivePlayerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AHTXLivePlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aalen.AHTXLivePlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FEBBE2B020B13A490024B8D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6042898EFB5F6F48D0A0B3DD /* Pods-AHTXLivePlayerDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AHTXLivePlayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aalen.AHTXLivePlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AHTXLivePlayerDemo.app/AHTXLivePlayerDemo";
+			};
+			name = Debug;
+		};
+		FEBBE2B120B13A490024B8D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87CCEA5C941DAABF41EC6849 /* Pods-AHTXLivePlayerDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AHTXLivePlayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aalen.AHTXLivePlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AHTXLivePlayerDemo.app/AHTXLivePlayerDemo";
+			};
+			name = Release;
+		};
+		FEBBE2B320B13A490024B8D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FB827EFD14964AE8435E2E2 /* Pods-AHTXLivePlayerDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AHTXLivePlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aalen.AHTXLivePlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AHTXLivePlayerDemo;
+			};
+			name = Debug;
+		};
+		FEBBE2B420B13A490024B8D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A18D90C3670D7C36D5EE484 /* Pods-AHTXLivePlayerDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AHTXLivePlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aalen.AHTXLivePlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AHTXLivePlayerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEBBE27B20B13A480024B8D3 /* Build configuration list for PBXProject "AHTXLivePlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEBBE2AA20B13A490024B8D3 /* Debug */,
+				FEBBE2AB20B13A490024B8D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEBBE2AC20B13A490024B8D3 /* Build configuration list for PBXNativeTarget "AHTXLivePlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEBBE2AD20B13A490024B8D3 /* Debug */,
+				FEBBE2AE20B13A490024B8D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEBBE2AF20B13A490024B8D3 /* Build configuration list for PBXNativeTarget "AHTXLivePlayerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEBBE2B020B13A490024B8D3 /* Debug */,
+				FEBBE2B120B13A490024B8D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEBBE2B220B13A490024B8D3 /* Build configuration list for PBXNativeTarget "AHTXLivePlayerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEBBE2B320B13A490024B8D3 /* Debug */,
+				FEBBE2B420B13A490024B8D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEBBE27820B13A480024B8D3 /* Project object */;
+}

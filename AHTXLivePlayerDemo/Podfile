@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'AHTXLivePlayerDemo' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for AHTXLivePlayerDemo
+  pod 'TXLiteAVSDK_Professional', '~> 4.2.3423'
+
+  target 'AHTXLivePlayerDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AHTXLivePlayerDemoUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
