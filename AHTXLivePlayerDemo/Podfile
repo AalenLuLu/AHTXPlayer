@@ -6,7 +6,7 @@ target 'AHTXLivePlayerDemo' do
   # use_frameworks!
 
   # Pods for AHTXLivePlayerDemo
-  pod 'TXLiteAVSDK_Professional', '~> 4.2.3423'
+  pod 'TXLiteAVSDK_Professional', '~> 4.9.4662'
 
   target 'AHTXLivePlayerDemoTests' do
     inherit! :search_paths

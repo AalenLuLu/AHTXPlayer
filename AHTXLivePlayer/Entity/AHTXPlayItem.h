@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "AHTXPlayerDef.h"
 
+@class AHTXPlayer;
+
 @interface AHTXPlayItem : NSObject
 
 @property (strong, readonly, nonatomic) UIView *liveView;
+@property (strong, nonatomic) AHTXPlayer *player;
 @property (copy, nonatomic) NSString *urlString;
 @property (assign, nonatomic) NSTimeInterval currentPlaybackTime;//Live always 0
 @property (assign, nonatomic) BOOL pausing;

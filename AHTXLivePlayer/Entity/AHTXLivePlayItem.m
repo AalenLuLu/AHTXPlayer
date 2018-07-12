@@ -28,6 +28,11 @@
 	return type;
 }
 
+- (AHTXPlayerType)playerType
+{
+	return AHTXPlayerType_Live;
+}
+
 - (BOOL)isValidURL
 {
 	AHTXPlayType type = [self playType];

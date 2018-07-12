@@ -35,6 +35,11 @@
 	return type;
 }
 
+- (AHTXPlayerType)playerType
+{
+	return AHTXPlayerType_Vod;
+}
+
 - (BOOL)isValidURL
 {
 	AHTXPlayType type = [self playType];

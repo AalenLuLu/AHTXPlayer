@@ -15,8 +15,8 @@ static AHTXPlayerAgent *sharedInstance = nil;
 
 @interface AHTXPlayerAgent ()
 
-@property (strong, nonatomic) AHTXLivePlayer *livePlayer;
-@property (strong, nonatomic) AHTXVodPlayer *vodPlayer;
+//@property (strong, nonatomic) AHTXLivePlayer *livePlayer;
+//@property (strong, nonatomic) AHTXVodPlayer *vodPlayer;
 @property (strong, nonatomic) AHTXPlayItem *currentItem;
 
 @end
@@ -47,8 +47,8 @@ static AHTXPlayerAgent *sharedInstance = nil;
 {
 	if(self = [super init])
 	{
-		_livePlayer = [[AHTXLivePlayer alloc] init];
-		_vodPlayer = [[AHTXVodPlayer alloc] init];
+//		_livePlayer = [[AHTXLivePlayer alloc] init];
+//		_vodPlayer = [[AHTXVodPlayer alloc] init];
 	}
 	return self;
 }
@@ -57,11 +57,19 @@ static AHTXPlayerAgent *sharedInstance = nil;
 
 - (void)playWithItem:(AHTXPlayItem *)item completion:(void (^)(BOOL, NSError *))completion
 {
-	AHTXPlayer *currentPlayer = [self _playerForItem: _currentItem];
-	AHTXPlayer *targetPlayer = [self _playerForItem: item];
+	AHTXPlayer *currentPlayer = _currentItem.player;//[self _playerForItem: _currentItem];
+	AHTXPlayer *targetPlayer = item.player;//[self _playerForItem: item];
 	if(![currentPlayer isEqual: targetPlayer])
 	{
 		[currentPlayer pauseWithItem: _currentItem];
+	}
+	if(nil == targetPlayer)
+	{
+		if(completion)
+		{
+			completion(NO, [NSError errorWithDomain: AHTXPlayerErrorDomain code: AHTXPlayerErrorDomain_Unknown userInfo: nil]);
+		}
+		return;
 	}
 	[targetPlayer playWithItem: item completion:^(BOOL success, NSError *error) {
 		if(success)
@@ -77,8 +85,8 @@ static AHTXPlayerAgent *sharedInstance = nil;
 
 - (void)resumeWithItem:(AHTXPlayItem *)item completion:(void (^)(BOOL, NSError *))completion
 {
-	AHTXPlayer *currentPlayer = [self _playerForItem: _currentItem];
-	AHTXPlayer *targetPlayer = [self _playerForItem: item];
+	AHTXPlayer *currentPlayer = _currentItem.player;//[self _playerForItem: _currentItem];
+	AHTXPlayer *targetPlayer = item.player;//[self _playerForItem: item];
 	if(![currentPlayer isEqual: targetPlayer])
 	{
 		[currentPlayer pauseWithItem: _currentItem];
@@ -97,24 +105,25 @@ static AHTXPlayerAgent *sharedInstance = nil;
 
 - (void)pauseWithItem:(AHTXPlayItem *)item
 {
-	AHTXPlayer *targetPlayer = [self _playerForItem: item];
+	AHTXPlayer *targetPlayer = item.player;//[self _playerForItem: item];
 	[targetPlayer pauseWithItem: item];
 }
 
 - (void)stopWithItem:(AHTXPlayItem *)item
 {
-	AHTXPlayer *targetPlayer = [self _playerForItem: item];
+	AHTXPlayer *targetPlayer = item.player;//[self _playerForItem: item];
 	[targetPlayer stopWithItem: item];
 }
 
 - (void)seekWithItem:(AHTXPlayItem *)item time:(float)time completion:(void (^)(BOOL, NSError *))completion
 {
-	AHTXPlayer *targetPlayer = [self _playerForItem: item];
+	AHTXPlayer *targetPlayer = item.player;//[self _playerForItem: item];
 	[targetPlayer seekWithItem: item time: time completion: completion];
 }
 
 #pragma mark - private function
 
+/*
 - (AHTXPlayer *)_playerForItem: (AHTXPlayItem *)item
 {
 	AHTXPlayer *player = nil;
@@ -128,5 +137,6 @@ static AHTXPlayerAgent *sharedInstance = nil;
 	}
 	return player;
 }
+*/
 
 @end

@@ -149,7 +149,9 @@
 
 - (void)onPlayEvent:(TXVodPlayer *)player event:(int)EvtID withParam:(NSDictionary *)param
 {
-	
+	NSLog(@"------------------------------------------------------------");
+	NSLog(@"%@", param);
+	NSLog(@"------------------------------------------------------------");
 }
 
 - (void)onNetStatus:(TXVodPlayer *)player withParam:(NSDictionary *)param

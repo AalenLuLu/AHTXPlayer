@@ -8,12 +8,15 @@
 
 #import "AHTXVodPlayItemFactory.h"
 #import "AHTXVodPlayItem.h"
+#import "AHTXVodPlayer.h"
 
 @implementation AHTXVodPlayItemFactory
 
 - (AHTXPlayItem *)createPlayItem
 {
-	return [[AHTXVodPlayItem alloc] init];
+	AHTXVodPlayItem *item = [[AHTXVodPlayItem alloc] init];
+	item.player = [[AHTXVodPlayer alloc] init];
+	return item;
 }
 
 @end

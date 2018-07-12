@@ -21,6 +21,7 @@
 		FE62773720B470E500E633B2 /* AHTXLivePlayItemFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62773620B470E500E633B2 /* AHTXLivePlayItemFactory.m */; };
 		FE62773A20B4716900E633B2 /* AHTXVodPlayItemFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62773920B4716900E633B2 /* AHTXVodPlayItemFactory.m */; };
 		FE6F0BA020B94D0D0061F1D4 /* AHTXPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6F0B9F20B94D0D0061F1D4 /* AHTXPlayer.m */; };
+		FE7633C420F3BDA1001D532F /* AHTXPlayerEventParam.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7633C320F3BDA1001D532F /* AHTXPlayerEventParam.m */; };
 		FEBBE28520B13A480024B8D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBBE28420B13A480024B8D3 /* AppDelegate.m */; };
 		FEBBE28820B13A480024B8D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBBE28720B13A480024B8D3 /* ViewController.m */; };
 		FEBBE28B20B13A480024B8D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEBBE28920B13A480024B8D3 /* Main.storyboard */; };
@@ -84,6 +85,8 @@
 		FE62773920B4716900E633B2 /* AHTXVodPlayItemFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHTXVodPlayItemFactory.m; sourceTree = "<group>"; };
 		FE6F0B9E20B94D0D0061F1D4 /* AHTXPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHTXPlayer.h; sourceTree = "<group>"; };
 		FE6F0B9F20B94D0D0061F1D4 /* AHTXPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHTXPlayer.m; sourceTree = "<group>"; };
+		FE7633C220F3BDA1001D532F /* AHTXPlayerEventParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHTXPlayerEventParam.h; sourceTree = "<group>"; };
+		FE7633C320F3BDA1001D532F /* AHTXPlayerEventParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHTXPlayerEventParam.m; sourceTree = "<group>"; };
 		FEBBE28020B13A480024B8D3 /* AHTXLivePlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AHTXLivePlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEBBE28320B13A480024B8D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FEBBE28420B13A480024B8D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -261,6 +264,8 @@
 				FE2B0C6620B1408500B823C8 /* AHTXLivePlayer.m */,
 				FE2B0C6F20B1C9B400B823C8 /* AHTXVodPlayer.h */,
 				FE2B0C7020B1C9B400B823C8 /* AHTXVodPlayer.m */,
+				FE7633C220F3BDA1001D532F /* AHTXPlayerEventParam.h */,
+				FE7633C320F3BDA1001D532F /* AHTXPlayerEventParam.m */,
 			);
 			name = AHTXLivePlayer;
 			path = ../AHTXLivePlayer;
@@ -293,8 +298,6 @@
 				FEBBE27C20B13A480024B8D3 /* Sources */,
 				FEBBE27D20B13A480024B8D3 /* Frameworks */,
 				FEBBE27E20B13A480024B8D3 /* Resources */,
-				F32BCE417163283DBB41BD08 /* [CP] Embed Pods Frameworks */,
-				67388AFD34B6E1BE2EF01EFE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -313,8 +316,6 @@
 				FEBBE29420B13A490024B8D3 /* Sources */,
 				FEBBE29520B13A490024B8D3 /* Frameworks */,
 				FEBBE29620B13A490024B8D3 /* Resources */,
-				3E85CBB0784F8BDDCEE3EB9F /* [CP] Embed Pods Frameworks */,
-				5751214F144ED74358637EA2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -334,8 +335,6 @@
 				FEBBE29F20B13A490024B8D3 /* Sources */,
 				FEBBE2A020B13A490024B8D3 /* Frameworks */,
 				FEBBE2A120B13A490024B8D3 /* Resources */,
-				57583D63276B0591C1479A72 /* [CP] Embed Pods Frameworks */,
-				90C38F6FF6D41EEDA6DB6065 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -435,66 +434,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3E85CBB0784F8BDDCEE3EB9F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHTXLivePlayerDemoTests/Pods-AHTXLivePlayerDemoTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5751214F144ED74358637EA2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHTXLivePlayerDemoTests/Pods-AHTXLivePlayerDemoTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		57583D63276B0591C1479A72 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHTXLivePlayerDemoUITests/Pods-AHTXLivePlayerDemoUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		67388AFD34B6E1BE2EF01EFE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHTXLivePlayerDemo/Pods-AHTXLivePlayerDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7F0E8F3EB90BD8032A590666 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -513,21 +452,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		90C38F6FF6D41EEDA6DB6065 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHTXLivePlayerDemoUITests/Pods-AHTXLivePlayerDemoUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E1E9DC1A36857D72EC876667 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -544,21 +468,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F32BCE417163283DBB41BD08 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AHTXLivePlayerDemo/Pods-AHTXLivePlayerDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -581,6 +490,7 @@
 				FE2B0C7A20B1DA8C00B823C8 /* AHTXPlayerAgent.m in Sources */,
 				FE2B0C7720B1D4A000B823C8 /* AHTXPlayerDef.m in Sources */,
 				FEBC6E9C20CC3E9800111AC7 /* AHTXPlayerBottomView.m in Sources */,
+				FE7633C420F3BDA1001D532F /* AHTXPlayerEventParam.m in Sources */,
 				FE62773A20B4716900E633B2 /* AHTXVodPlayItemFactory.m in Sources */,
 				FE2B0C6720B1408500B823C8 /* AHTXLivePlayer.m in Sources */,
 				FEBBE29320B13A490024B8D3 /* main.m in Sources */,

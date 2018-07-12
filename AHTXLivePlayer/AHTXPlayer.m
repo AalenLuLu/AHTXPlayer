@@ -17,7 +17,7 @@
 {
 	BOOL result = NO;
 	NSError *error = nil;
-	if(nil != item)
+	if(nil == item)
 	{
 		error = [NSError errorWithDomain: AHTXPlayerErrorDomain code: AHTXPlayerErrorDomain_MissingItem userInfo: nil];
 	}

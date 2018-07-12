@@ -13,6 +13,7 @@
 
 @interface AHTXPlayer : NSObject <AHTXPlayer>
 
-@property (strong, nonatomic) AHTXPlayItem *item;
+@property (weak, nonatomic) AHTXPlayItem *item;
+@property (weak, nonatomic) id<AHTXPlayerDelegate> delegate;
 
 @end

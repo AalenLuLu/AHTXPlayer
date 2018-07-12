@@ -8,12 +8,15 @@
 
 #import "AHTXLivePlayItemFactory.h"
 #import "AHTXLivePlayItem.h"
+#import "AHTXLivePlayer.h"
 
 @implementation AHTXLivePlayItemFactory
 
 - (AHTXPlayItem *)createPlayItem
 {
-	return [[AHTXLivePlayItem alloc] init];
+	AHTXLivePlayItem *item = [[AHTXLivePlayItem alloc] init];
+	item.player = [[AHTXLivePlayer alloc] init];
+	return item;
 }
 
 @end
