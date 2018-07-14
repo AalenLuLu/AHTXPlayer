@@ -65,6 +65,13 @@
 	[_agent stopWithItem: self];
 }
 
+#pragma mark - AHTXPlayerDelegate
+
+- (void)onAHTXPlayerEvent:(AHTXPlayerEvent *)event
+{
+	
+}
+
 #pragma mark - lazy load
 
 - (UIView *)liveView

@@ -16,6 +16,7 @@
 {
 	AHTXVodPlayItem *item = [[AHTXVodPlayItem alloc] init];
 	item.player = [[AHTXVodPlayer alloc] init];
+	item.player.delegate = item;
 	return item;
 }
 

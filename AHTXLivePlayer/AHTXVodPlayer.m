@@ -8,6 +8,7 @@
 
 #import "AHTXVodPlayer.h"
 #import "AHTXPlayItem.h"
+#import "AHTXPlayerEvent.h"
 #import <TXVodPlayer.h>
 
 @interface AHTXVodPlayer () <TXVodPlayListener>
@@ -150,8 +151,14 @@
 - (void)onPlayEvent:(TXVodPlayer *)player event:(int)EvtID withParam:(NSDictionary *)param
 {
 	NSLog(@"------------------------------------------------------------");
+	NSLog(@"%@", param[EVT_MSG]);
 	NSLog(@"%@", param);
+	NSLog(@"player state: %@", player.isPlaying ? @"YES" : @"NO");
 	NSLog(@"------------------------------------------------------------");
+	if(self.delegate && [self.delegate respondsToSelector: @selector(onAHTXPlayerEvent:)])
+	{
+		[self.delegate onAHTXPlayerEvent: [[AHTXPlayerEvent alloc] initWithEventID:EvtID params:param]];
+	}
 }
 
 - (void)onNetStatus:(TXVodPlayer *)player withParam:(NSDictionary *)param

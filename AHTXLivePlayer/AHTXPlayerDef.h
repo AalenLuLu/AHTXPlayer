@@ -56,24 +56,27 @@ typedef NS_ENUM(NSUInteger, AHTXPlayerType) {
 
 @end
 
-typedef NS_ENUM(NSUInteger, AHTXPlayerEvent) {
-	AHTXPlayerEvent_Connect,
-	AHTXPlayerEvent_Start,
-	AHTXPlayerEvent_Loading,
-	AHTXPlayerEvent_Progress,
-	AHTXPlayerEvent_End,
-	AHTXPlayerEvent_ResolutionChange,
-	AHTXPlayerEvent_RotationChange,
-	AHTXPlayerEvent_Disconnect,
-	AHTXPlayerEvent_DecodeFail,
-	AHTXPlayerEvent_Lag
+typedef NS_ENUM(NSUInteger, AHTXPlayerEventType) {
+	AHTXPlayerEventType_Unknown,
+	AHTXPlayerEventType_Connect,
+	AHTXPlayerEventType_Start,
+	AHTXPlayerEventType_Loading,
+	AHTXPlayerEventType_Progress,
+	AHTXPlayerEventType_End,
+	AHTXPlayerEventType_ResolutionChange,
+	AHTXPlayerEventType_RotationChange,
+	AHTXPlayerEventType_Disconnect,
+	AHTXPlayerEventType_HEVCDecodeFail,
+	AHTXPlayerEventType_VideoDecodeFail,
+	AHTXPlayerEventType_AudioDecodeFail,
+	AHTXPlayerEventType_Lag
 };
 
-@class AHTXPlayerEventParam;
+@class AHTXPlayerEvent;
 
 @protocol AHTXPlayerDelegate <NSObject>
 
-- (void)onAHTXPlayerEvent: (AHTXPlayerEvent)event params: (AHTXPlayerEventParam *)params;
+- (void)onAHTXPlayerEvent: (AHTXPlayerEvent *)event;
 
 @end
 /*

@@ -11,7 +11,7 @@
 
 @class AHTXPlayer;
 
-@interface AHTXPlayItem : NSObject
+@interface AHTXPlayItem : NSObject <AHTXPlayerDelegate>
 
 @property (strong, readonly, nonatomic) UIView *liveView;
 @property (strong, nonatomic) AHTXPlayer *player;

@@ -7,6 +7,7 @@
 //
 
 #import "AHTXVodPlayItem.h"
+#import "AHTXPlayerEvent.h"
 
 @implementation AHTXVodPlayItem
 
@@ -48,6 +49,17 @@
 		return NO;
 	}
 	return YES;
+}
+
+#pragma mark - AHTXPlayerDelegate
+
+- (void)onAHTXPlayerEvent:(AHTXPlayerEvent *)event
+{
+	NSLog(@"%@", @(event.eventType));
+	if(AHTXPlayerEventType_End == event.eventType)
+	{
+		[self stop];
+	}
 }
 
 @end
