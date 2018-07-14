@@ -59,8 +59,10 @@ typedef NS_ENUM(NSUInteger, AHTXPlayerType) {
 typedef NS_ENUM(NSUInteger, AHTXPlayerEventType) {
 	AHTXPlayerEventType_Unknown,
 	AHTXPlayerEventType_Connect,
+	AHTXPlayerEventType_Vod_Prepared,
 	AHTXPlayerEventType_Start,
 	AHTXPlayerEventType_Loading,
+	AHTXPlayerEventType_Vod_Loading_End,
 	AHTXPlayerEventType_Progress,
 	AHTXPlayerEventType_End,
 	AHTXPlayerEventType_ResolutionChange,
@@ -90,9 +92,10 @@ step3    PLAY_EVT_PLAY_LOADING			  =  2007,   // 视频播放loading
 PLAY_EVT_START_VIDEO_DECODER     =  2008,   // 解码器启动
 PLAY_EVT_CHANGE_RESOLUTION       =  2009,   // 视频分辨率改变
 PLAY_EVT_GET_PLAYINFO_SUCC       =  2010,   // 获取点播文件信息成功
-PLAY_EVT_CHANGE_ROATION          =  2011,   // MP4视频旋转角度
+PLAY_EVT_CHANGE_ROTATION         =  2011,   // MP4视频旋转角度
 PLAY_EVT_GET_MESSAGE             =  2012,   // 消息事件
-
+PLAY_EVT_VOD_PLAY_PREPARED       =  2013,   // 视频加载完毕（点播）
+PLAY_EVT_VOD_LOADING_END         =  2014,   // loading结束（点播）
 
 step1    PLAY_ERR_NET_DISCONNECT          = -2301,   // 网络断连,且经多次重连抢救无效,可以放弃治疗,更多重试请自行重启播放
 PLAY_ERR_GET_RTMP_ACC_URL_FAIL   = -2302,   // 获取加速拉流地址失败

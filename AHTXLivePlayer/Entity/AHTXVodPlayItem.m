@@ -8,6 +8,13 @@
 
 #import "AHTXVodPlayItem.h"
 #import "AHTXPlayerEvent.h"
+#import "AHTXPlayerEndEventHandler.h"
+
+@interface AHTXVodPlayItem ()
+
+@property (strong, nonatomic) NSDictionary<NSNumber *, AHTXPlayerEventHandler *> *eventHandlers;
+
+@end
 
 @implementation AHTXVodPlayItem
 
@@ -51,15 +58,22 @@
 	return YES;
 }
 
+- (void)registerEventHandlers
+{
+	_eventHandlers = @{@(AHTXPlayerEventType_End): [[AHTXPlayerEndEventHandler alloc] init]};
+}
+
+#pragma mark - private function
+
+
+
 #pragma mark - AHTXPlayerDelegate
 
 - (void)onAHTXPlayerEvent:(AHTXPlayerEvent *)event
 {
 	NSLog(@"%@", @(event.eventType));
-	if(AHTXPlayerEventType_End == event.eventType)
-	{
-		[self stop];
-	}
+	AHTXPlayerEventHandler *handler = _eventHandlers[@(event.eventType)];
+	[handler handleEvent: event item: self];
 }
 
 @end

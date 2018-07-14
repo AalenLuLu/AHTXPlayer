@@ -24,6 +24,7 @@
 	if(self = [super init])
 	{
 		_agent = [AHTXPlayerAgent sharedInstance];
+		[self registerEventHandlers];
 	}
 	return self;
 }
@@ -63,6 +64,11 @@
 - (void)stop
 {
 	[_agent stopWithItem: self];
+}
+
+- (void)registerEventHandlers
+{
+	
 }
 
 #pragma mark - AHTXPlayerDelegate

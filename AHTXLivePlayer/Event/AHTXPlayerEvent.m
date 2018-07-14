@@ -62,12 +62,20 @@
 			event = AHTXPlayerEventType_Connect;
 			break;
 			
+		case PLAY_EVT_VOD_PLAY_PREPARED:
+			event = AHTXPlayerEventType_Vod_Prepared;
+			break;
+			
 		case PLAY_EVT_PLAY_BEGIN:
 			event = AHTXPlayerEventType_Start;
 			break;
 			
 		case PLAY_EVT_PLAY_LOADING:
 			event = AHTXPlayerEventType_Loading;
+			break;
+			
+		case PLAY_EVT_VOD_LOADING_END:
+			event = AHTXPlayerEventType_Vod_Loading_End;
 			break;
 			
 		case PLAY_EVT_PLAY_PROGRESS:
