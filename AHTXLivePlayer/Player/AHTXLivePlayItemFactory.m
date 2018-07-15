@@ -16,6 +16,7 @@
 {
 	AHTXLivePlayItem *item = [[AHTXLivePlayItem alloc] init];
 	item.player = [[AHTXLivePlayer alloc] init];
+	item.player.delegate = item;
 	return item;
 }
 

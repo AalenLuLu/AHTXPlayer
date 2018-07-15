@@ -8,6 +8,7 @@
 
 #import "AHTXLivePlayer.h"
 #import "AHTXPlayItem.h"
+#import "AHTXPlayerEvent.h"
 #import <TXLivePlayer.h>
 
 @interface AHTXLivePlayer () <TXLivePlayListener>
@@ -154,7 +155,10 @@
 
 - (void)onPlayEvent:(int)EvtID withParam:(NSDictionary *)param
 {
-	
+	if(self.delegate && [self.delegate respondsToSelector: @selector(onAHTXPlayerEvent:)])
+	{
+		[self.delegate onAHTXPlayerEvent: [[AHTXPlayerEvent alloc] initWithEventID:EvtID params:param]];
+	}
 }
 
 - (void)onNetStatus:(NSDictionary *)param

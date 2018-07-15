@@ -7,6 +7,7 @@
 //
 
 #import "AHTXLivePlayItem.h"
+#import "AHTXPlayerEvent.h"
 
 @implementation AHTXLivePlayItem
 
@@ -41,6 +42,13 @@
 		return NO;
 	}
 	return YES;
+}
+
+#pragma mark - AHTXPlayerDelegate
+
+- (void)onAHTXPlayerEvent:(AHTXPlayerEvent *)event
+{
+	NSLog(@"%@", @(event.eventType));
 }
 
 @end
