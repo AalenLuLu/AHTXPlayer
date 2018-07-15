@@ -61,4 +61,14 @@
 	}
 }
 
+- (BOOL)isPlayingWithItem:(AHTXPlayItem *)item
+{
+	return NO;
+}
+
+- (void)updateProgressWithPlayItem:(AHTXPlayItem *)item
+{
+	
+}
+
 @end

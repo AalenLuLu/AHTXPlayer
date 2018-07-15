@@ -70,11 +70,11 @@
 			event = AHTXPlayerEventType_Start;
 			break;
 			
-		case PLAY_EVT_PLAY_LOADING:
+		case PLAY_EVT_PLAY_LOADING://Caching
 			event = AHTXPlayerEventType_Loading;
 			break;
 			
-		case PLAY_EVT_VOD_LOADING_END:
+		case PLAY_EVT_VOD_LOADING_END://Caching End
 			event = AHTXPlayerEventType_Vod_Loading_End;
 			break;
 			

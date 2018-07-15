@@ -8,6 +8,8 @@
 
 #import "AHTXVodPlayItem.h"
 #import "AHTXPlayerEvent.h"
+#import "AHTXPlayerStartEventHandler.h"
+#import "AHTXPlayerProgressEventHandler.h"
 #import "AHTXPlayerEndEventHandler.h"
 
 @interface AHTXVodPlayItem ()
@@ -60,7 +62,9 @@
 
 - (void)registerEventHandlers
 {
-	_eventHandlers = @{@(AHTXPlayerEventType_End): [[AHTXPlayerEndEventHandler alloc] init]};
+	_eventHandlers = @{@(AHTXPlayerEventType_Start): [[AHTXPlayerStartEventHandler alloc] init],
+					   @(AHTXPlayerEventType_Progress): [[AHTXPlayerProgressEventHandler alloc] init],
+					   @(AHTXPlayerEventType_End): [[AHTXPlayerEndEventHandler alloc] init]};
 }
 
 #pragma mark - private function

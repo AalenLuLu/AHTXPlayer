@@ -8,6 +8,7 @@
 
 #import "AHTXVodPlayer.h"
 #import "AHTXPlayItem.h"
+#import "AHTXPlayItemProgress.h"
 #import "AHTXPlayerEvent.h"
 #import <TXVodPlayer.h>
 
@@ -89,6 +90,7 @@
 {
 	if([self.item isEqual: item])
 	{
+		/*
 		if([_player isPlaying])
 		{
 			[_player pause];
@@ -98,6 +100,9 @@
 		{
 			[self stopWithItem: item];
 		}
+		*/
+		[_player pause];
+		item.pausing = YES;
 	}
 }
 
@@ -143,6 +148,25 @@
 		{
 			completion(NO, [NSError errorWithDomain: AHTXPlayerErrorDomain code: AHTXPlayerErrorDomain_NotPlayingItem userInfo: nil]);
 		}
+	}
+}
+
+- (BOOL)isPlayingWithItem:(AHTXPlayItem *)item
+{
+	if([self.item isEqual: item])
+	{
+		return _player.isPlaying;
+	}
+	return NO;
+}
+
+- (void)updateProgressWithPlayItem:(AHTXPlayItem *)item
+{
+	if([self.item isEqual: item])
+	{
+		item.progress.duration = _player.duration;
+		item.progress.cachedDuration = _player.playableDuration;
+		item.progress.playbackTime = _player.currentPlaybackTime;
 	}
 }
 

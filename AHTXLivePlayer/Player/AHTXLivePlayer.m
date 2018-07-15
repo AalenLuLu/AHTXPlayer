@@ -88,6 +88,7 @@
 {
 	if([self.item isEqual: item])
 	{
+		/*
 		if([_player isPlaying])
 		{
 			[_player pause];
@@ -97,6 +98,9 @@
 		{
 			[self stopWithItem: item];
 		}
+		*/
+		[_player pause];
+		item.pausing = YES;
 	}
 }
 
@@ -112,6 +116,15 @@
 - (void)setUseSpeaker:(BOOL)useSpeaker
 {
 	[TXLivePlayer setAudioRoute: useSpeaker ? AUDIO_ROUTE_SPEAKER : AUDIO_ROUTE_RECEIVER];
+}
+
+- (BOOL)isPlayingWithItem:(AHTXPlayItem *)item
+{
+	if([self.item isEqual: item])
+	{
+		return _player.isPlaying;
+	}
+	return NO;
 }
 
 #pragma mark - private function

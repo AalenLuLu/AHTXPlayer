@@ -121,6 +121,16 @@ static AHTXPlayerAgent *sharedInstance = nil;
 	[targetPlayer seekWithItem: item time: time completion: completion];
 }
 
+- (BOOL)isPlayingWithItem:(AHTXPlayItem *)item
+{
+	return [item.player isPlayingWithItem: item];
+}
+
+- (void)updateProgressWithPlayItem:(AHTXPlayItem *)item
+{
+	[item.player updateProgressWithPlayItem: item];
+}
+
 #pragma mark - private function
 
 /*

@@ -45,6 +45,17 @@ typedef NS_ENUM(NSUInteger, AHTXPlayerType) {
 };
 
 @class AHTXPlayItem;
+@class AHTXPlayItemProgress;
+
+@protocol AHTXPlayItemDelegate <NSObject>
+
+- (void)playItemDidPlay: (AHTXPlayItem *)item;
+- (void)playItemDidPause: (AHTXPlayItem *)item;
+- (void)playItemDidStop: (AHTXPlayItem *)item;
+- (void)playItem: (AHTXPlayItem *)item didChangeProgress: (AHTXPlayItemProgress *)progress;
+- (void)playItem: (AHTXPlayItem *)item didChangeLoading: (BOOL)isLoading;
+
+@end
 
 @protocol AHTXPlayer <NSObject>
 
@@ -53,6 +64,8 @@ typedef NS_ENUM(NSUInteger, AHTXPlayerType) {
 - (void)pauseWithItem: (AHTXPlayItem *)item;
 - (void)stopWithItem: (AHTXPlayItem *)item;
 - (void)seekWithItem: (AHTXPlayItem *)item time: (float)time completion: (void (^)(BOOL success, NSError *error))completion;
+- (BOOL)isPlayingWithItem: (AHTXPlayItem *)item;
+- (void)updateProgressWithPlayItem: (AHTXPlayItem *)item;
 
 @end
 
