@@ -100,6 +100,11 @@
 	}
 }
 
+- (void)seekWithPlaybackTime:(float)playbackTime completion:(void (^)(BOOL, NSError *))completion
+{
+	[_agent seekWithItem: self time: playbackTime completion: completion];
+}
+
 - (void)updateProgress
 {
 	[_agent updateProgressWithPlayItem: self];

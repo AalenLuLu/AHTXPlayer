@@ -28,6 +28,7 @@
 		FE12AB1120FA5F330034A782 /* AHTXPlayerResolutionEventBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = FE12AB0A20FA5F330034A782 /* AHTXPlayerResolutionEventBuilder.m */; };
 		FE12AB1220FA5F330034A782 /* AHTXPlayerEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FE12AB0D20FA5F330034A782 /* AHTXPlayerEventHandler.m */; };
 		FE12AB1520FA5F530034A782 /* AHTXPlayerEndEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FE12AB1420FA5F530034A782 /* AHTXPlayerEndEventHandler.m */; };
+		FE12F43E219AB95600E0208D /* AHTXPlayItemCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = FE12F43D219AB95600E0208D /* AHTXPlayItemCreator.m */; };
 		FE2B0C7720B1D4A000B823C8 /* AHTXPlayerDef.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2B0C7620B1D4A000B823C8 /* AHTXPlayerDef.m */; };
 		FE62773220B470C900E633B2 /* AHTXLivePlayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62772C20B470C900E633B2 /* AHTXLivePlayItem.m */; };
 		FE62773320B470C900E633B2 /* AHTXPlayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FE62772E20B470C900E633B2 /* AHTXPlayItem.m */; };
@@ -109,6 +110,8 @@
 		FE12AB0D20FA5F330034A782 /* AHTXPlayerEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHTXPlayerEventHandler.m; sourceTree = "<group>"; };
 		FE12AB1320FA5F530034A782 /* AHTXPlayerEndEventHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHTXPlayerEndEventHandler.h; sourceTree = "<group>"; };
 		FE12AB1420FA5F530034A782 /* AHTXPlayerEndEventHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHTXPlayerEndEventHandler.m; sourceTree = "<group>"; };
+		FE12F43C219AB95600E0208D /* AHTXPlayItemCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHTXPlayItemCreator.h; sourceTree = "<group>"; };
+		FE12F43D219AB95600E0208D /* AHTXPlayItemCreator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHTXPlayItemCreator.m; sourceTree = "<group>"; };
 		FE2B0C7520B1D4A000B823C8 /* AHTXPlayerDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHTXPlayerDef.h; sourceTree = "<group>"; };
 		FE2B0C7620B1D4A000B823C8 /* AHTXPlayerDef.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHTXPlayerDef.m; sourceTree = "<group>"; };
 		FE62772B20B470C900E633B2 /* AHTXLivePlayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHTXLivePlayItem.h; sourceTree = "<group>"; };
@@ -212,6 +215,8 @@
 				FE12AAE720FA5EAB0034A782 /* AHTXVodPlayItemFactory.m */,
 				FE12AAE020FA5EAB0034A782 /* AHTXPlayerAgent.h */,
 				FE12AAE120FA5EAB0034A782 /* AHTXPlayerAgent.m */,
+				FE12F43C219AB95600E0208D /* AHTXPlayItemCreator.h */,
+				FE12F43D219AB95600E0208D /* AHTXPlayItemCreator.m */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -571,6 +576,7 @@
 				FE12AAFA20FA5EAC0034A782 /* AHTXVodPlayer.m in Sources */,
 				FE2B0C7720B1D4A000B823C8 /* AHTXPlayerDef.m in Sources */,
 				FE12AAF620FA5EAC0034A782 /* AHTXLivePlayItemFactory.m in Sources */,
+				FE12F43E219AB95600E0208D /* AHTXPlayItemCreator.m in Sources */,
 				FEBC6E9C20CC3E9800111AC7 /* AHTXPlayerBottomView.m in Sources */,
 				FE12AAFC20FA5EAC0034A782 /* AHTXPlayerEvent.m in Sources */,
 				FE0358DC20FB5F3500CD3B38 /* AHTXPlayerProgressEventHandler.m in Sources */,

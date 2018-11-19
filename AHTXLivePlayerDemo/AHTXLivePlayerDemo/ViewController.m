@@ -36,7 +36,7 @@
 	[self.view addSubview: self.playbackView];
 	
 	AHTXPlayItemFactory *factory = [[AHTXVodPlayItemFactory alloc] init];
-	_playItem = [factory playItemWithURLString: @"https://1251962819.vod2.myqcloud.com/54067453vodtransgzp1251962819/26bc1bf57447398156931439625/v.f20.mp4"];
+	_playItem = [factory playItemWithURLString: @""];
 	_playItem.delegate = self;
 	[self.view addSubview: _playItem.liveView];
 	_playItem.liveView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height - 100.0);
@@ -52,8 +52,11 @@
 {
 	[self _showToast: @"Play"];
 	[_playItem playWithCompletion:^(BOOL success, NSError *error) {
-		NSLog(@"%ld", (long)success);
+		NSLog(@"play completion: %ld, %ld", (long)success, (long)self.playItem.isPlaying);
 	}];
+	dispatch_async(dispatch_get_main_queue(), ^{
+		NSLog(@"async did invoke play: %ld", (long)self.playItem.isPlaying);
+	});
 }
 
 - (void)_onPauseButtonPressed

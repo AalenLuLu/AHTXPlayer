@@ -31,6 +31,7 @@
 - (void)resumeWithCompletion: (void (^)(BOOL success, NSError *error))completion;
 - (void)pause;
 - (void)stop;
+- (void)seekWithPlaybackTime: (float)playbackTime completion: (void (^)(BOOL success, NSError *error))completion;
 - (void)updateProgress;
 
 
